@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pouyamn.robotcalculationapp.MainActivityFragment"
+    tools:showIn="@layout/activity_mechanic">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TV0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Total Mass" />
+
+            <EditText
+                android:id="@+id/ET0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV0"
+                android:layout_alignBottom="@+id/TV0"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Mass (Kg)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/TV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV0"
+                android:layout_marginTop="20dp"
+                android:text="Number of drive motors" />
+
+            <EditText
+                android:id="@+id/ET1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV1"
+                android:layout_alignBottom="@+id/TV1"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Number of drive motors (#)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/TV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV1"
+                android:layout_marginTop="20dp"
+                android:text="Radius of drive wheel" />
+
+            <EditText
+                android:id="@+id/ET2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV2"
+                android:layout_alignBottom="@+id/TV2"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Radius of drive wheel (m)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/TV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV2"
+                android:layout_marginTop="20dp"
+                android:text="Robot Velocity" />
+
+            <EditText
+                android:id="@+id/ET3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV3"
+                android:layout_alignBottom="@+id/TV3"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Robot Velocity (m/s)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/TV4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV3"
+                android:layout_marginTop="20dp"
+                android:text="Maximum incline" />
+
+            <EditText
+                android:id="@+id/ET4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV4"
+                android:layout_alignBottom="@+id/TV4"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Maximum incline (deg)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/TV5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV4"
+                android:layout_marginTop="20dp"
+                android:text="Desired acceleration" />
+
+            <EditText
+                android:id="@+id/ET5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV5"
+                android:layout_alignBottom="@+id/TV5"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Desired acceleration (m/s2)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/TV6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV5"
+                android:layout_marginTop="20dp"
+                android:text="Total efficiency" />
+
+            <EditText
+                android:id="@+id/ET6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV6"
+                android:layout_alignBottom="@+id/TV6"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Total efficiency (%)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+
+            <Button
+                android:id="@+id/button_Calc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TV6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Calculated" />
+
+            <TextView
+                android:id="@+id/TV12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_Calc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="Calculate Angular Velocity (RPM) "
+                android:textColor="@color/colortextbold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TV13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TV12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="Required Torque (Nm) "
+                android:textColor="@color/colortextbold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

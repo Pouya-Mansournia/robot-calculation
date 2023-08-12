@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pouyamn.robotcalculationapp.ElectronicSection"
+    tools:showIn="@layout/activity_electronic">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TV0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Supply voltage" />
+
+            <EditText
+                android:id="@+id/ET0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV0"
+                android:layout_alignBottom="@+id/TV0"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Supply voltage (V)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/TV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV0"
+                android:layout_marginTop="20dp"
+                android:text="Motors torque" />
+
+            <EditText
+                android:id="@+id/ET1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV1"
+                android:layout_alignBottom="@+id/TV1"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Motors torque (N.m)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/TV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV1"
+                android:layout_marginTop="20dp"
+                android:text="Angular Velocity" />
+
+            <EditText
+                android:id="@+id/ET2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV2"
+                android:layout_alignBottom="@+id/TV2"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Angular Velocity (RPM)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/TV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV2"
+                android:layout_marginTop="20dp"
+                android:text="Desired operating time" />
+
+            <EditText
+                android:id="@+id/ET3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV3"
+                android:layout_alignBottom="@+id/TV3"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Desired operating time (min)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+            <TextView
+                android:id="@+id/TV4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV3"
+                android:layout_marginTop="20dp"
+                android:text="Number of Motors" />
+
+            <EditText
+                android:id="@+id/ET4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TV4"
+                android:layout_alignBottom="@+id/TV4"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="Number of Motors (#)"
+                android:inputType="numberDecimal"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/button_Calct"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TV4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Calculated" />
+
+            <TextView
+                android:id="@+id/TV12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_Calct"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="Calculate Total Power (W) "
+                android:textColor="@color/colortextbold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TV13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TV12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="Maximum current (A) "
+                android:textColor="@color/colortextbold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TV14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TV13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="Battery Pack (Ah)"
+                android:textColor="@color/colortextbold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

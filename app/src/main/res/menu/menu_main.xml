@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pouyamn.robotcalculationapp.MechanicSection">
+
+    <item
+        android:id="@+id/action_Mechanic"
+        android:orderInCategory="100"
+        android:title="Mechanic Section"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Electronic"
+        android:orderInCategory="100"
+        android:title="Electronic Section"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_Manipulator"
+        android:orderInCategory="100"
+        android:title="Manipulator"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_Aboutus"
+        android:orderInCategory="100"
+        android:title="About Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>
